@@ -5,6 +5,10 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(children: [Text('this second page')]));
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Second page'),),
+      body: Column(children: [Text('welcome to the second page ')]));
   }
 }

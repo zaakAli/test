@@ -1,3 +1,4 @@
+import 'package:banned/secondPage.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -13,18 +14,22 @@ class Home extends StatelessWidget {
             SizedBox(height: 50),
             Center(
               child: Text(
-                'This is home page',
+                'This is home  page',
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 67,
                   fontWeight: FontWeight.bold,
-                  color: Colors.red,
+                  color: const Color.fromARGB(255, 192, 73, 65),
                 ),
               ),
             ),
-            SizedBox(height: 23),
-            Center(
-              child: Text(
-                'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley',
+            SizedBox(height: 67),
+            GestureDetector(
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage())),
+              child: Center(
+                child: Text(
+                  'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem enIpsum has be the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley',
+                  
+                ),
               ),
             ),
           ],
